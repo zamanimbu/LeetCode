@@ -10,7 +10,7 @@ namespace TwoSum
     {
         static void Main(string[] args)
         {
-            int[] number = { 2, 7, 11, 15 };
+            int[] number = { 2,7,11,15};
             int target = 9;
 
             int[] output = GetTwoSum(number, target);
@@ -19,17 +19,25 @@ namespace TwoSum
             Console.ReadKey();
         }
 
-        private static int[] GetTwoSum(int[] number, int target)
+        private static int[] GetTwoSum(int[] nums, int target)
         {
-            var calclulationDictionary = new Dictionary<int, int[]>();
-
-            for (int i = 0; i < number.Length; i++)
+            var recordTable = new Dictionary<int, int>();
+            int difference = 0;
+            for (int i = 0; i < nums.Length; i++)
             {
-                calclulationDictionary.Add(number[i], new int[] { number[i] + target, i });
-            }
-            foreach(var item in calclulationDictionary)
-            {
-                if(Math.Abs())
+                difference = target- nums[i];
+                if (recordTable.ContainsKey(difference))
+                {
+                    return new int[] { recordTable[difference], i };
+                }
+                else
+                {
+                    if (!recordTable.ContainsKey(nums[i]))
+                    {
+                        recordTable.Add(nums[i], i);
+                    }
+                    
+                }
             }
             return new int[] { -1, -1 };
         }
