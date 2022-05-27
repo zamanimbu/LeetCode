@@ -21,22 +21,19 @@ namespace TwoSum
 
         private static int[] GetTwoSum(int[] nums, int target)
         {
-            var recordTable = new Dictionary<int, int>();
+            var recordTable = new Dictionary<int,int>();
             int difference = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                difference = target- nums[i];
+                difference = target - nums[i];
                 if (recordTable.ContainsKey(difference))
-                {
-                    return new int[] { recordTable[difference], i };
-                }
+                    return new int[] { recordTable[difference] + 1, i + 1 };
                 else
                 {
                     if (!recordTable.ContainsKey(nums[i]))
                     {
                         recordTable.Add(nums[i], i);
                     }
-                    
                 }
             }
             return new int[] { -1, -1 };
