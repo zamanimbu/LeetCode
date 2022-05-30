@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum", "TwoSum\TwoSum.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidPalindrome", "ValidPalindrome\ValidPalindrome.csproj", "{2A51E6B5-5CE6-4822-884F-DD0C80FA448D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseString", "ReverseString\ReverseString.csproj", "{B0097033-D9E3-4576-91A9-6C9DC14997A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{2A51E6B5-5CE6-4822-884F-DD0C80FA448D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A51E6B5-5CE6-4822-884F-DD0C80FA448D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A51E6B5-5CE6-4822-884F-DD0C80FA448D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0097033-D9E3-4576-91A9-6C9DC14997A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0097033-D9E3-4576-91A9-6C9DC14997A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0097033-D9E3-4576-91A9-6C9DC14997A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0097033-D9E3-4576-91A9-6C9DC14997A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
