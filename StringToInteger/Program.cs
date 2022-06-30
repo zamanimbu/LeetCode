@@ -19,6 +19,6 @@ Console.ReadLine();
             sb.Append(array[i]);
         }
     }
-    int integerValue = Convert.ToInt32(sb.ToString());
+    int integerValue = Convert.ToInt32(sb.ToString()); 
     return integerValue;
 }
